@@ -1,31 +1,36 @@
 <html>
-
-<head>
-    <title>Blog with photos</title>
-</head>
-
-<body>
-    <center>
-        <p>
-            Welcome To my photography world
-        </p>
-        <span>
-            <img src="1.png">
-        </span>
-        <span>
-            <img src="2.png">
-        </span>
-        <p>
-            These are pictures of mountrushmore and a lion
-        </p>
-        <span>
-            <img src="3.png">
-        </span>
-        <span>
-            <img src="4.png">
-        </span>
-        <p>
-            These are pictures of venis and the northern lights
-        </p>
-    </center>
-</body></html>
+    <head><title>My Selfie App</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+       <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+       
+       <link href="style.css" rel="stylesheet">
+       
+       <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+       </head>
+    <body>
+        <center>
+        <a href="" id="link" download="myselfie.png"></a>
+        <h1>Voice Selfie App<img style="height: 100px; width: 100px; border-radius: 50%;" src="https://mahdihat791.github.io/v2/ADV_selfie_app.com/selfie.jpeg"></h1>
+        <hr>
+        <h3 style="color:red">Please press allow as soon as popup comes. After you give a voice command</h3>
+        <div><h2>Say "take my selfie"</h2>
+        <label>your voice output:</label>
+        <textarea id="textbox" cols="30" rows="1" readonly="true"></textarea>
+        </div>
+        <button class="btn btn-primary" onclick="Start()">Start</button>
+        <label>Press the Start button</label>
+        <br>
+        <br>
+        <label>Your webcam:</label>
+        <div id="camera"></div>
+        <br>
+        <br>
+        <label>Your Selfie here:</label>
+        <div id="result"></div>
+</center> 
+<script src="main.js"></script>
+    </body>
+   
+</html>
